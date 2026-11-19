@@ -151,7 +151,9 @@ ddev exec php /var/www/html/moodle/admin/cli/install.php --non-interactive --agr
   --dbtype=mariadb --dbhost=db --dbname=db --dbuser=db --dbpass=db --prefix=mdl_ \
   --fullname="Learning site" --shortname="learning" --summary="The site the test suite runs against." \
   --adminuser=administrator --adminpass="$ACCOUNT_PASSWORD" --adminemail=administrator@example.com \
-  --supportemail=support@example.com --noreplyemail=noreply@example.com </dev/null
+  --supportemail=support@example.com </dev/null
+# The no-reply address through the site's own settings tool: the installer of the 4.5 line has no option for it.
+ddev exec php /var/www/html/moodle/admin/cli/cfg.php --name=noreplyaddress --set=noreply@example.com </dev/null
 
 # The test site: its settings, the test course, the accounts.
 test_site --settings
