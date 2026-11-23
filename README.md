@@ -37,7 +37,7 @@ then the assertions that must fail; see
 
 ## From nothing to a green run
 
-What the machine needs: Docker, [DDEV](https://ddev.com), git, python3, and Node.js 20 or later with npm. PHP, the database and the mail catcher run in DDEV's containers.
+What the machine needs: Docker, [DDEV](https://ddev.com), git, python3, and Node.js 24 or later with npm. PHP, the database and the mail catcher run in DDEV's containers.
 
 **1. The site.** The pack's own build script (the one CI runs) makes the site in a DDEV project of type `php`: the release package of the current stable release in `moodle/`, served from `moodle/public`, its data folder `moodledata/` beside it (outside the web root), MariaDB 11.4, cron running in the web container, installed by the release's own `admin/cli/install.php`. Then it turns the guest login button on, turns the user tours off, makes the test course of [A test site](#a-test-site) and the five accounts of [Test users](#test-users). It takes about four minutes.
 
@@ -175,7 +175,7 @@ Not tested: the platform's own tests (it has its own runner); completing a regis
 
 ## Requirements
 
-- Node.js 20 or later
+- Node.js 24 or later
 - A webship-js 2.0 test project (webship-js 2.0.16 or later)
 - A site of the 5.x line (proven on 5.3) with the default theme, and accounts on it for the suite
 
