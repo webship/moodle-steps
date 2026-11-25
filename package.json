@@ -1,6 +1,6 @@
 {
   "name": "@webship-js/moodle-steps",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Cucumber step definitions for learning sites on Moodle, a plugin for webship-js (Playwright and Cucumber): the session and the guest login, the dashboard and My courses, the course page with its sections, activities and completion, enrolment by the teacher and self enrolment with a key, the assignment (submit, grade), the quiz (attempt, submit, review), the forum (post, reply), the gradebook, the participants and their roles, the calendar, messages and notifications, and the site administration search and course management, waiting on the site's own signal for its pending JavaScript.",
   "main": "tests/step-definitions/moodle-session.steps.js",
   "files": [
